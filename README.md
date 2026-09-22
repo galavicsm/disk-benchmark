@@ -7,9 +7,8 @@ complete JSON or CSV reports. The desktop application and CLI use the same Go
 benchmark engine, workload selection, validation, and report renderers.
 
 > **Warning:** The benchmark writes at least the configured working-set size.
-> Duration-based and fsync workloads can write substantially more. Repeated
-> large tests require enough free space in the
-> target directory.
+> Duration-based and fsync workloads can write substantially more. 
+> Repeated large tests require enough free space in the target directory.
 
 ## Building
 
