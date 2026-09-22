@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "workloads": [
+    {
+      "type": "sequential",
+      "duration": "2s"
+    },
+    {
+      "type": "random",
+      "name": "database-style mixed I/O",
+      "duration": "5s",
+      "random_read_percent": 70,
+      "random_seed": 42
+    },
+    {
+      "type": "overwrite",
+      "duration": "2s"
+    },
+    {
+      "type": "fsync-write",
+      "name": "durable block writes"
+    }
+  ]
+}
